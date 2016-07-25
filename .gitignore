@@ -1,0 +1,8 @@
+.idea/
+public/
+*.iml
+.DS_Store
+.fuse_hidden000022bc00000001
+.fuse_hidden000022bc00000002
+index.html
+node_modules/

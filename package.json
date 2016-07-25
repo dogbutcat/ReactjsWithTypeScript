@@ -1,0 +1,26 @@
+{
+  "name": "typescriptreact",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "jade index.jade && webpack",
+    "webpack-dev": "webpack-dev-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "ts-loader": "^0.8.2",
+    "typescript": "^1.8.10"
+  },
+  "dependencies": {
+    "flux": "^2.1.1",
+    "immutable": "^3.8.1",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "rx": "^4.1.0",
+    "rxjs": "^5.0.0-beta.10",
+    "typescript": "^1.8.10"
+  }
+}
