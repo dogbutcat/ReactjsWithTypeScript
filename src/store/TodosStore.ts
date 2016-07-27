@@ -37,6 +37,8 @@ class TodosStore{
                 case TodoConstants.CREATE:
                     this.create(action.text);
                     break;
+                case TodoConstants.TOGGLE_COMPLETED:
+                    this.toggleCompleted(action.todo);
             }
         });
     }
@@ -64,6 +66,17 @@ class TodosStore{
             .subscribe(()=>{
                 this.todos = this.todos.push(Map({text}))
             })
+    }
+
+    private getTodoIndex(todo:ITodo){
+        return this.todos.findIndex((t)=>t === todo);
+    }
+
+    private toggleCompleted(todo:ITodo){
+        let index = this.getTodoIndex(todo);
+        this.todos = this.todos.update(index,(t)=>{
+            return t.set('completed',!t.get('completed'));
+        })
     }
 }
 

@@ -3,5 +3,6 @@
  */
 export default {
     "GET_ALL":"TODOS.GET_ALL",
-    "CREATE":"TODOS.CREATE"
+    "CREATE":"TODOS.CREATE",
+    "TOGGLE_COMPLETED":"TODOS.TOGGLE_COMPLETED"
 }
